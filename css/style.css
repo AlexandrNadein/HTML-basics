@@ -203,3 +203,114 @@ blockquote {
   line-height: 23px;
   color: #000;
 }
+
+/*
+modules
+*/
+
+.modules-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+a.back-link {
+  display: inline-block;
+  font-size: 14px;
+  color: #4b4bff;
+  margin: 0;
+}
+
+a.back-link:hover,
+a.back-link:focus {
+  text-decoration: underline;
+}
+
+.modules-of-course {
+  color: #4b4bff;
+  font-weight: 600;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 32px;
+  margin: 0;
+}
+
+ul.modules-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+li.module-card {
+  background: #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: default;
+}
+
+.module-image {
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+}
+
+.module-content {
+  padding: 20px 25px 25px 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.module-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4b4bff;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+}
+
+.lessons-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.lessons-list li {
+  margin-bottom: 6px;
+}
+
+.module-number {
+  position: absolute;
+  bottom: 12px;
+  right: 15px;
+  font-size: 32px;
+  font-weight: 400;
+  color: #eee;
+}
+
+.show-more {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4b4bff;
+  background: transparent;
+  border: 2px solid #4b4bff;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.show-more:hover,
+.show-more:focus {
+  background-color: #4b4bff;
+  color: #fff;
+}
